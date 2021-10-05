@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import addDigimonsThunk from "../../store/modules/digimons/thunks";
-import 'react-toastify/dist/ReactToastify.css';
 
 const Search = () => {
 
@@ -14,11 +13,11 @@ const Search = () => {
     setError(false)
     dispatch(addDigimonsThunk(input))
     setInput("")
+    
   }  
-
+  
   return (
     <div>
-      {console.log(input)}
       <h2>Procure pelo seu Digimon!</h2>
       <div>
         <input

@@ -14,7 +14,7 @@ const Digimons = () => {
               return( 
                 <div>
                   {
-                    elt === undefined ? <>{toast.warning('Digimon não existe!')}</> :
+                    elt === undefined ? <></> :
                     <div>
                       <h3>{elt.name}</h3>
                       <img src={`${elt.img}`} />

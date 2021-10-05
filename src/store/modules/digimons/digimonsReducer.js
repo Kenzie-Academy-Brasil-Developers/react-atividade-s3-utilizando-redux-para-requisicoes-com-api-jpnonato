@@ -7,8 +7,7 @@ export default function digimonsReducer( state = initial, action){
 
     switch(action.type){
         case '@digimons/ADD':
-            const {digimon} = action
-            console.log(digimon)    
+            const {digimon} = action    
             return [...state, digimon]
             
             default:
