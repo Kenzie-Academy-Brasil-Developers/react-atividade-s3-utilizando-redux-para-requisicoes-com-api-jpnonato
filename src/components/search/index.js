@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import addDigimonsThunk from "../../store/modules/digimons/thunks";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Search = () => {
 

@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux"
+import {  toast } from 'react-toastify';
+
 
 const Digimons = () => {
 
    const {digimons} = useSelector(store => store)
 
-
+    
     return (
       <div>
           { 
@@ -12,7 +14,7 @@ const Digimons = () => {
               return( 
                 <div>
                   {
-                    elt === undefined ? <></> :
+                    elt === undefined ? <>{toast.warning('Digimon não existe!')}</> :
                     <div>
                       <h3>{elt.name}</h3>
                       <img src={`${elt.img}`} />

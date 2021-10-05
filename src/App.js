@@ -3,14 +3,24 @@ import './App.css';
 import Search from './components/search'
 import Digimons from './components/digimons'
 import axios from 'axios';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
-
-  // axios.get('https://digimon-api.vercel.app/api/digimon').then((response) => console.log(response.data))
 
   return (
     <div className="App">
       <header className="App-header">
+         <ToastContainer
+          position="top-center"
+          autoClose={2000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          />
         <Search />
         <Digimons />
       </header>
