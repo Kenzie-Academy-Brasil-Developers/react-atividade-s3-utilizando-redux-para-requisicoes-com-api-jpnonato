@@ -1,5 +1,8 @@
+
+
 .App {
   text-align: center;
+  
 }
 
 
@@ -9,13 +12,13 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url("./components/digimons/thumb-1920-799578.png");
 }
 
 img{
-
+  width: 214px;
   border-radius: 20px;
 }
+
